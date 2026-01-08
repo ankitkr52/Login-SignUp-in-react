@@ -1,0 +1,130 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 200px;
+    background: white;
+    padding: 30px;
+    width: 600px;
+    border-radius: 23px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.text {
+    color: #3c009d;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.underline {
+    width: 160px;
+    height: 5px;
+    background: #c20c97;
+    border-radius: 9px;
+}
+
+.inputs {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 480px;
+    height: 80px;
+    background: #eaeaea;
+    border-radius: 8px;
+}
+
+.input img {
+    margin: 0px 30px;
+}
+
+.input input {
+    height: 50px;
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-size: 19px;
+}
+
+.forgot-password {
+    padding-left: 62px;
+    margin-top: 27px;
+    font-size: 18px;
+    color: #797979;
+}
+
+.forgot-password span {
+    color: #4c00b4;
+    cursor: pointer;
+}
+
+.submit-container {
+    margin: 60px auto;
+    gap: 30px;
+    display: flex;
+}
+
+.submit {
+    width: 220px;
+    height: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    background: #4c00b4;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 19px;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+       position: relative;
+  overflow: hidden;
+}
+.submit:hover {
+  transform: scale(1.05);
+}
+.submit:not(.gray):hover {
+  background: linear-gradient(135deg, #6b21a8 0%, #7c3aed 100%);
+  box-shadow: 0 10px 30px rgba(109, 40, 217, 0.4);
+}
+.submit.gray:hover {
+  background-color: #cbd5e1;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+.submit::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.238);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+submit:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.gray {
+    background: #EAEAEA;
+    color: #676767;
+}
